@@ -1,0 +1,50 @@
+cuando creamos una aplicacion la creamos por modulos y cada uno tiene una tarea
+
+vamos a crear un modulo
+
+para importar otro archivo se usa requiere();
+const math = require ('./math.js');
+
+
+como exportar algo para otros archivos lo utilicen
+
+el codigo se ejecuta de manera interpretada
+
+hay cosas como crear archivos, de la cual se encarga el sistema operativo
+asi que es codigo asincrono
+
+este men no espera porque es un master delegando
+solo espera respuesta de las tareas
+
+el codigo bloqueante significa que la instruccion debe 
+temrinar para ejecutar lo siguiente
+
+por eso node es tan rapido
+
+EL PODEROSISIMO NPM
+permite administrar paquetes o modulos nuevos para nuestro server
+
+npm install colors
+
+
+cuando queremos subir nuestra app a un servicio en la nube
+necesita saber una lista de los modulos que necesita para funcionar
+
+lo hacemos con npm init 
+y llenamos los datos que pide
+
+se crea el package.json 
+
+ahi esta todo lo que necesita el proyecto para funcionar
+
+es decir que con el json puedo saberlo casi todo
+
+con npm install se instala todo lo del package.json
+
+"scripts": {
+    "start": "node index.js",
+    "desarrollo": "node index.js"
+  },
+
+  podemos agregar comandos para ejecutar simplemente
+  corriendo npm run nombre_del_nuevo_comando
